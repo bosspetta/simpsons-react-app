@@ -1,0 +1,72 @@
+@import url('https://fonts.cdnfonts.com/css/homer-simpson-revised');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Homer Simpson Revised', sans-serif;
+    font-size: 1.75rem;
+    background-color: #f9f9f9;
+}
+
+img {
+    max-width: 100%;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.site-title {
+    padding: 0 .5em;
+}
+
+.site-title img {
+    max-width: 500px;
+    display: block;
+    margin: 1em auto;
+}
+
+.quotes-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 1em;
+    gap: 1em;
+    border-top: 1px solid lightgrey;
+}
+
+.quote-item {
+    border-radius: 1em;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 1em;
+    box-shadow: 0 0 5px rgba(0,0,0,.25);
+    display: flex;
+    img {
+        display: block;
+        margin: auto;
+    }
+    h2 {
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+.quote-item-inner {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border: 1px solid lightgray;
+}
